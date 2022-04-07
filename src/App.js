@@ -1,11 +1,13 @@
 import { ThemeProvider } from 'styled-components';
-import GlobalStyles from './styles/Global';
 import { Container } from './styles/Container.styled';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Content from './content';
 import Card from './components/Card';
+
+import { GlobalStyles } from 'twin.macro';
+import StyleBase from './styles/Global';
 
 const theme = {
 	colors: {
@@ -21,6 +23,7 @@ function App() {
 		<ThemeProvider theme={theme}>
 			<>
 				<GlobalStyles />
+				<StyleBase />
 				<Header />
 				<Container>
 					{Content.map((item, idx) => (
