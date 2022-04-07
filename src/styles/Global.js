@@ -1,27 +1,33 @@
 import { createGlobalStyle } from 'styled-components';
+import tw from 'twin.macro';
 
 const StyleBase = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 * {
-	box-sizing: border-box;
+	${tw`box-border`}
 }
 
 body {
-	background: ${({ theme }) => theme.colors.body};
-	color: hsl(192, 100%, 9%);
+	${tw`bg-body text-[hsl(192, 100%, 9%)] text-xl m-0`}
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.15em;
-	margin: 0;
 }
 
+h1{
+	${tw`text-3xl`}
+}
+
+h2{
+	${tw`text-2xl`}
+}
+
+
 p {
-	opacity: 0.6;
-	line-height: 1.5;
+	${tw`opacity-60 text-base`}
 }
 
 img {
-	max-width: 100%;
+	${tw`max-w-full`}
 }
 `;
 

@@ -1,32 +1,17 @@
-import styled from 'styled-components';
+import tw, { styled } from 'twin.macro';
 
 export const StyleHeader = styled.div`
-	background: ${({ theme }) => theme.colors.header};
-	padding: 40px 0;
+	${tw`bg-header  py-10`}
 `;
 
 export const Nav = styled.nav`
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 40px;
-
-	@media (max-width: ${({ theme }) => theme.mobile}) {
-		flex-direction: column;
-	}
+	${tw`flex flex-col items-center mb-5 md:flex-row md:justify-between`}
 `;
 
 export const Logo = styled.img`
-	@media (max-width: ${({ theme }) => theme.mobile}) {
-		margin-bottom: 40px;
-	}
+	${tw`mb-14 md:mb-0`}
 `;
 
 export const Image = styled.img`
-	width: 375px;
-	margin-left: 40px;
-
-	@media (max-width: ${({ theme }) => theme.mobile}) {
-		margin: 40px 0 30px;
-	}
+	${tw`w-4/5 mt-10 mb-8 md:w-1/2`}
 `;

@@ -1,18 +1,12 @@
-import styled from 'styled-components';
+import tw, { styled } from 'twin.macro';
 
 export const Button = styled.button`
-	border-radius: 50px;
-	border: none;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 700;
-	padding: 15px 60px;
-	background-color: ${({ bg }) => bg || '#fff'};
-	color: ${({ color }) => color || '#333'};
+	${tw`rounded-[3rem] border-0 cursor-pointer shadow-sm text-base font-bold py-4 px-14 bg-indigo-500 text-white`}
 
 	&:hover {
-		opacity: 0.9;
-		transform: scale(0.98);
+		${tw`opacity-90 scale-95`}
 	}
+
+	${({ primary }) => primary && tw`bg-primary text-primary`}
+	${({ secondary }) => secondary && tw`bg-secondary text-secondary`}
 `;

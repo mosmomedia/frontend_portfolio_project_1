@@ -1,11 +1,6 @@
-import styled from 'styled-components';
+import tw, { styled } from 'twin.macro';
 
 export const Flex = styled.div`
-	display: flex;
+	${tw`flex flex-col-reverse items-center md:flex-row`}
 	align-items: center;
-
-	& > div,
-	& > ul {
-		flex: 1;
-	}
 `;

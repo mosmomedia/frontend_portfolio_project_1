@@ -1,8 +1,5 @@
-import styled from 'styled-components';
+import tw, { styled } from 'twin.macro';
 
 export const Container = styled.div`
-	width: 1000px;
-	max-width: 100%;
-	padding: 0 20px;
-	margin: 0 auto;
+	${tw`container mx-auto px-5 md:px-10`}
 `;
