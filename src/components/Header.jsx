@@ -14,8 +14,8 @@ export default function Header() {
 					<Button secondary>Try It Free</Button>
 				</Nav>
 
-				<Flex>
-					<div tw="text-center space-y-5 md:text-left">
+				<Flex colReverse>
+					<div tw="text-center space-y-5 px-5 md:text-left">
 						<h1>Build The Community Your Fans Will Love</h1>
 
 						<p>

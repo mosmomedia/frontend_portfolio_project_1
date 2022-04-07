@@ -1,17 +1,10 @@
-import styled from 'styled-components';
+import tw, { styled } from 'twin.macro';
 
 export const StyledCard = styled.div`
-	display: flex;
-	align-items: center;
-	background: #fff;
-	border-radius: 15px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-	margin: 40px 0;
-	padding: 60px;
-	flex-direction: ${({ layout }) => layout || 'row'};
+	${tw`bg-white rounded-2xl shadow-sm my-10 p-14`}
 
 	img {
-		width: 80%;
+		${tw`w-4/5 mx-auto md:w-full`}
 	}
 
 	@media (max-width: ${({ theme }) => theme.mobile}) {
