@@ -14,16 +14,19 @@ body {
 }
 
 h1{
-	${tw`text-3xl`}
+	${tw`text-3xl md:text-2xl lg:text-3xl`}
 }
 
 h2{
 	${tw`text-2xl`}
 }
 
+li{
+	${tw`text-base lg:text-lg xl:text-xl`}
+}
 
 p {
-	${tw`opacity-60 text-base`}
+	${tw`opacity-70 text-base lg:text-lg xl:text-xl `}
 }
 
 img {

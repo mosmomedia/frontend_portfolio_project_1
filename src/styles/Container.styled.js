@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
 
 export const Container = styled.div`
-	${tw`container mx-auto px-5 md:px-10`}
+	${tw`container mx-auto px-5`}
 `;

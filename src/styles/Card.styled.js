@@ -6,8 +6,4 @@ export const StyledCard = styled.div`
 	img {
 		${tw`w-4/5 mx-auto md:w-full`}
 	}
-
-	@media (max-width: ${({ theme }) => theme.mobile}) {
-		flex-direction: column;
-	}
 `;

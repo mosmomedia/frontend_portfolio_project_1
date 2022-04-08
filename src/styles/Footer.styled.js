@@ -1,29 +1,35 @@
-import styled from 'styled-components';
+import tw, { styled } from 'twin.macro';
 
 export const StyledFooter = styled.footer`
-	background-color: ${({ theme }) => theme.colors.footer};
-	color: #fff;
-	padding: 100px 0 60px;
+	${tw`bg-footer text-white pt-24 pb-14`}
+
+	img {
+		${tw`mx-auto mb-10 md:mx-0`}
+	}
 
 	ul {
-		list-style-type: none;
+		${tw`space-y-4 mb-4`}
 	}
 
 	ul li {
-		margin-bottom: 20px;
+		${tw`text-center md:text-left`}
 	}
 
 	p {
-		text-align: right;
+		${tw`text-center md:text-left`}
 	}
 
-	@media (max-width: ${({ theme }) => theme.mobile}) {
-		text-align: center;
-		ul {
-			padding: 0;
-		}
-		p {
-			text-align: center;
-		}
+	.footerLogo,
+	.left_section,
+	p {
+		${tw`md:pl-3`}
+	}
+
+	.left_section {
+		${tw`md:w-3/5`}
+	}
+
+	.right_section {
+		${tw`md:flex md:flex-row md:space-x-10 md:pr-3`}
 	}
 `;
